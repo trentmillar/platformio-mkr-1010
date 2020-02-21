@@ -5,11 +5,17 @@
  * then off for one second, repeatedly.
  */
 #include <SPI.h>
+#include <WiFi101.h>
 #include "Arduino.h"
+#include "arduino_secrets.h" 
+
 
 #ifndef LED_BUILTIN
-#define LED_BUILTIN 13
+#define LED_BUILTIN 6
 #endif
+
+// Initialize the Wifi client library
+WiFiClient client;
 
 void setup()
 {

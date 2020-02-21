@@ -4,4 +4,7 @@
 # VSCode
 /.vscode
 
+# Secrets
+secrets.h
+
 output
