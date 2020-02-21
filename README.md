@@ -36,10 +36,10 @@ Step 3 initializes the board to use `Arduino MKR WIFI 1010`. To use other boards
    - this will create a new file *platformio.ini* a Travis CI file, and some scaffolding, *include, src, lib, test* folders
 4. confirm the *platformio.ini* contains the boards,
     ```
-    [env:esp32doit-devkit-v1]
-    board = esp32doit-devkit-v1
+    [env:mkrwifi1010]
+    platform = atmelsam
+    board = mkrwifi1010
     framework = arduino
-    platform = espressif32
     ```
 
 ## Running/Uploading the program to a board
