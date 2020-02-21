@@ -4,6 +4,7 @@
  * Turns on an LED on for one second,
  * then off for one second, repeatedly.
  */
+#include <SPI.h>
 #include "Arduino.h"
 
 #ifndef LED_BUILTIN
