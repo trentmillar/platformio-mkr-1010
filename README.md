@@ -44,7 +44,7 @@ Step 3 initializes the board to use `Arduino MKR WIFI 1010`. To use other boards
 
 ## Running/Uploading the program to a board
 1. use the cli an run , `pio run` this will take a minute to fetch the board firmware and build it. Look in the newly created folder */.pio* to see what is pulled down
-2. once everything is built then you need to upload the program (*/src/main.cpp*) to a board, this example uploads to the MKR board, `pio run -e mkrwifi1010 -t upload`. Note, if you have all your boards connected via a serial port then you don't need to specify `-e` or which environment to upload to
+2. once everything is built then you need to upload the program (*/src/main.cpp*) to a board, this example uploads to the MKR board, `pio run -t upload`. Note, if you have all your boards connected via a serial port then you don't need to specify `-e` or which environment to upload to
    
 That is it, your board should be flashing. Note, in *main.cpp* your LED_BUILTIN pin may be 13 (Uno), verify your board's schematics for the pin usage.
 
