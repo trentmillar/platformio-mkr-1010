@@ -5,7 +5,14 @@
  * then off for one second, repeatedly.
  */
 #include <SPI.h>
+
+#ifdef USE_WIFININA
 #include <WiFiNINA.h>
+#else
+#include <WiFi.h>
+#include <WiFiClientSecure.h>
+#endif
+
 #include "Arduino.h"
 #include "secrets.h"
 
